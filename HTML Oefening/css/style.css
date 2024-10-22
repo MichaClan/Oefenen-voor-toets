@@ -1,0 +1,55 @@
+html {
+    --table-blue-colour: rgb(0, 136, 255);
+    --table-light-blue: rgb(0, 174, 255);
+    --background-color: rgb(226, 243, 255);
+    --main-background-color: rgb(255, 255, 255);
+    --head-text-color: rgb(255, 0, 0);
+    --table-second-colour: rgb(199, 255, 161);
+    --table-third-colour: rgb(58, 255, 133);
+}
+
+th {
+    border: 1px solid black;
+    color: var(--table-blue-colour); /*Oo nu werkt wel na deleten en opnieuw zetten*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: aliceblue;
+    font-size: larger;
+}
+
+td {
+    border: 1px solid black;   
+    color: var(--table-light-blue);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--background-color);
+    font-size: larger;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse; /*idk*/
+}
+
+main {
+    margin: auto;
+    width: 50vw;
+    height: 10vw;
+    color: var(--head-text-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    background-color: var(--main-background-color); /*Wrm is die backgroundcolor wit?*/
+}
+
+td:nth-child(even) {
+    background-color: var(--table-second-colour);
+}
+
+td:nth-child(odd) {
+    background-color: var(--table-third-colour);
+}
+
+img{
+    width: 200px;
+}
